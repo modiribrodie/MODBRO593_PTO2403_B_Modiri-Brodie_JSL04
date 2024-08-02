@@ -5,12 +5,16 @@
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
 let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
+let flavor = userPreference === 'Sugar-free' ? userPreference : 'Regular';
+console.log(`Preferred Flavor: ${flavor}`);
 
 // #### Challenge 2: Stock Check
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
 let cansLeft = 3; // Any number of cans
+let stockStatus = cansLeft < 5 ? 'Time to restock!' : "We're stocked!";
+console.log(stockStatus);
 
 
 // #### Challenge 3: Workout Intensity
@@ -18,6 +22,8 @@ let cansLeft = 3; // Any number of cans
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
 let heartRate = 95; // Current heart rate in bpm
+let workoutBoost = heartRate >=100 ? 'Boost needed!' : 'Energy levels are high!';
+console.log(workoutBoost);
 
 
 // #### Challenge 4: Temperature Suitability
@@ -25,6 +31,8 @@ let heartRate = 95; // Current heart rate in bpm
 // if the temperature is below or equal to 5°C, or "Needs a cooler!" if above 5°C.
 
 let currentTemp = 4; // Current temperature in °C
+let tempStatus = currentTemp <= 5 ? 'Chilled to perfection!' : 'Needs a cooler!';
+console.log(tempStatus);
 
 
 // #### Challenge 5: Late Night Coding Session
@@ -33,16 +41,6 @@ let currentTemp = 4; // Current temperature in °C
 // otherwise, print "Better stick to water."
 
 // Define the current hour in 24-hour format
-
-// Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
-// If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
-// Otherwise, print "Better stick to water."
-
-
-
-
-
-
-// In each of these challenges, the ternary operator is used to decide between two options based on a condition, 
-// demonstrating its utility for concise conditional logic. Remember that while ternaries can make the code more succinct, 
-// they should be used judiciously to maintain readability, especially for more complex conditions.
+let currentHour = 22; // Current hour in 24hr format
+let drinkDecision = (currentHour >= 22 && currentHour < 4) ? 'Unleash the beast!' : 'Better stick to water!';
+console.log(drinkDecision);
