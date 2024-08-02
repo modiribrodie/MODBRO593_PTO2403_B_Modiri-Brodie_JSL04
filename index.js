@@ -34,7 +34,6 @@ let currentTemp = 4; // Current temperature in °C
 // otherwise, print "Better stick to water."
 
 // Define the current hour in 24-hour format
-let currentHour = 22; 
 
 // Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
